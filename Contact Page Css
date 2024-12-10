@@ -1,0 +1,109 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: rgb(140, 168, 199);;
+}
+
+/* Header / Banner */
+header {
+    background-color: #5a5757; /* Bright color reflecting the energy of skateboarding */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #575757;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(140, 168, 199);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover:not(.active) {
+    background-color:rgb(140, 168, 199);
+    color: black;
+  }
+
+
+  .active:hover {
+    background-color: rgb(99, 109, 112);
+    
+  }
+  
+.banner h1 {
+    font-size: 2.5em;
+    font-family:  'Times New Roman';
+    text-shadow: 2px 2px 5px rgb(8, 71, 134);
+    color: #edf5faf3;
+}
+
+#tutorials {
+    padding: 20px;
+    background-color: #57575728;
+}
+
+.tutorial {
+    background-color: #edf5faf3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+form input[type="submit"] {
+    background-color: #095cf8bd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e53d3d;
+}
+
+.contact-info {
+    font-size: 1.1em;
+}
+
+
+
