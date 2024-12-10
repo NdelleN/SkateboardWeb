@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simon Palowski's skateboard shop, events, and tutorials">
+  <title>Simon's Skate Haven</title>
+  <link rel="stylesheet" href="Tutorials.css"> 
+</head>
+
+<body>
+   <!-- Header/Banner Section -->
+<header>
+    <div class="banner">
+        <h1>𝕊𝕚𝕞𝕠𝕟'𝕤 𝕊𝕜𝕒𝕥𝕖 ℍ𝕒𝕧𝕖𝕟</h1>
+    </div>
+</header>
+
+<div class="topnav">
+    <a class="active" href="Simon's Skate Haven.html">Home</a>
+    <a href="Products Page.html">Products</a>
+    <a href="Tutorials Page.html">Tutorials</a>
+    <a href="Contact page.html">Contact</a>
+  </div>
+
+    <!-- Tutorials Page-->
+<section id="tutorials">
+    <h2>Skateboarding Moves For Beginners: </h2>
+    
+    <div class="tutorial">
+        <h3>The Ollie</h3>
+        <p>Step 1: Position your feet correctly...<br>
+           Step 2: Apply pressure on the back foot...<br>
+           Step 3: Pop the board up...</p>
+        <a href="https://www.youtube.com/watch?v=OLlYjjeXt3c" target="_blank">Watch the video tutorial</a>
+    </div>
+
+    <div class="tutorial">
+        <h3>BoardSlide</h3>
+        <p>Step 1: Start with a low obstacle...<br>
+           Step 2: Wax the rail...<br>
+           Step 3: Practice your Ollie...</p>
+        <a href="https://www.youtube.com/watch?v=msrem_0uyOA" target="_blank">Watch the video tutorial</a>
+    </div>
+
+    <div class="tutorial">
+        <h3>HeelFlip</h3>
+        <p>Step 1: Push on your skateboard...<br>
+           Step 2: Plaace your front foot below...<br>
+           Step 3: Place your back foot on the...</p>
+        <a href="https://youtu.be/phsJk5_jHkU" target="_blank">Watch the video tutorial</a>
+    </div>
+
+    <div class="tutorial">
+        <h3>Pop Shuvit</h3>
+        <p>Step 1: Stance...<br>
+           Step 2: Pop and Shoot...<br>
+           Step 3: Jump and rotate...</p>
+        <a href="https://youtu.be/Qy69I0Q6ITo" target="blanck">Watch the video tutorial</a>   
+    </div>
+</section>
+
+</body>
+
+
+#CSS
+
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: rgb(140, 168, 199);;
+}
+
+/* Header / Banner */
+header {
+    background-color: #5a5757; /* Bright color reflecting the energy of skateboarding */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #575757;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(140, 168, 199);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover:not(.active) {
+    background-color:rgb(140, 168, 199);
+    color: black;
+  }
+
+
+  .active:hover {
+    background-color: rgb(99, 109, 112);
+    
+  }
+  
+.banner h1 {
+    font-size: 2.5em;
+    font-family:  'Times New Roman';
+    text-shadow: 2px 2px 5px rgb(8, 71, 134);
+    color: #edf5faf3;
+}
+
+/* How-To Tutorials Page */
+#tutorials {
+    padding: 20px;
+    background-color: #57575728;
+}
+
+.tutorial {
+    background-color: #edf5faf3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
