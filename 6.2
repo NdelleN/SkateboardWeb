@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simon Palowski's skateboard shop, events, and tutorials">
-    <title>Simon Palowski Skateboards</title>
-    <link rel="stylesheet" href="Skateboarding Business.css">  
+    <meta name="description" content="Simon's Skate Haven">
+    <title>Simon's Skate Haven</title>
+    <link rel="stylesheet" href="Simon's Skate Haven.css">  
 </head>
 
 
@@ -14,18 +14,18 @@
 <!-- Header/Banner Section -->
 <header>
     <div class="banner">
-        <h1>𝕊𝕚𝕞𝕠𝕟'𝕤 𝕊𝕜𝕒𝕥𝕖 ℍ𝕒𝕧𝕖𝕟</h1>
+        <h1>Simon's Skate Haven</h1>
     </div>
 </header>
 
 <div class="topnav">
-    <a class="active" href="Skateboarding Business.html">Home</a>
+    <a class="active" href="Simon's Skate haven.html">Home</a>
     <a href="Products Page.html">Products</a>
     <a href="Tutorials Page.html">Tutorials</a>
     <a href="Contact page.html">Contact</a>
   </div>
 
-<!-- Home Page -->
+<!-- Home section -->
 <section id="home">
     <div class="intro">
         
@@ -36,11 +36,13 @@
     <div class="events">
         <h3>Upcoming Events</h3>
         <ul>
-            <li>National Skateboard Championship - January 2025</li>
-            <li>Local Skater Meetup - December 2024</li>
-            <li>Skateboarding Tricks Workshop - February 2025</li>
+            <li><a href="https://www.adrenalinealley.co.uk/event/458/christmas-late-night-2024/">Christmas Late Night - 2024</a></li>
+            <li><a href="https://skateboardgb.org/events/">Local Skater Meetup - December 2024</a></li>
+            <li><a href="https://www.boardriding.com/events/uk-independent-vert-series-blockless-combat-birmingham-2024">Skateboarding Tricks Workshop - 2025</a></li>
         </ul>
     </div>
+
+    
 
     <div class="skater-stories">
         <h3>Skater Stories</h3>
@@ -49,7 +51,7 @@
     </div>
 </section>
 
-<!-- Products Page -->
+<!-- Products Section -->
 <section id="products">
     <h2>Our Skateboards</h2>
     <div class="product-list">
@@ -74,49 +76,26 @@
     </div>
 </section>
 
-<!-- How-To Tutorials Page -->
-<section id="tutorials">
-    <h2>How-To Skateboarding Moves</h2>
-    <div class="tutorial">
-        <h3>The Ollie</h3>
-        <p>Step 1: Position your feet correctly...<br>
-           Step 2: Apply pressure on the back foot...<br>
-           Step 3: Pop the board up...</p>
-        <a href="https://www.youtube.com/watch?v=OLlYjjeXt3c" target="_blank">Watch the video tutorial</a>
-    </div>
-</section>
 
-<!-- Contact and Newsletter Page -->
-<section id="contac
-t">
-    <h2>Contact & Newsletter</h2>
-    <form action="submit_form.php" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-
-        <input type="submit" value="Sign Up">
-    </form>
-
-    <div class="contact-info">
+<div class="contact-info">
         <h3>Contact Us</h3>
         <p>Phone: (123) 456-7890</p>
         <p>Email: <a href="mailto:simon@palowskiskate.com">simon@palowskiskate.com</a></p>
     </div>
 </section>
 
+
 <!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Simon Palowski Skateboards. All rights reserved.</p>
+    <p>&copy; 2024 Simon's Skate Haven. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
 
 
-(CSS Starts Here)
+
+#CSS
 
 
 /* Reset and Base Styles */
@@ -133,27 +112,28 @@ body {
 }
 
 h1, h2, h3 {
-    color: rgb(140, 168, 199);;
+    color: darkred;
 }
 
 /* Header / Banner */
 header {
-    background-color: #5a5757; /* Bright color reflecting the energy of skateboarding */
+    background-color: black; /* Bright color reflecting the energy of skateboarding */
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     padding: 20px 0;
 }
 
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #575757;
+    background-color: black;
   }
   
   /* Style the topnav links */
   .topnav a {
     float: left;
     display: block;
-    color: rgb(140, 168, 199);
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -161,21 +141,22 @@ header {
   
   /* Change color on hover */
   .topnav a:hover:not(.active) {
-    background-color:rgb(140, 168, 199);
-    color: black;
+    background-color:rgb(203, 207, 211);
+    color: red;
   }
 
 
   .active:hover {
-    background-color: rgb(99, 109, 112);
+    background-color: white;
+    color: red;
     
   }
   
 .banner h1 {
     font-size: 2.5em;
     font-family:  'Times New Roman';
-    text-shadow: 2px 2px 5px rgb(8, 71, 134);
-    color: #edf5faf3;
+    text-shadow: 2px 2px 5px red;
+    color: white;
 }
 
 /* Home Page */
@@ -186,43 +167,45 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-size: 100% 100%;
-    text-shadow: 1px 1px 0.4px #fff;
+    text-shadow: 1px 1px 0.122px none;
 }
 
 
 .intro, .events, .skater-stories {
-    margin-bottom: 20px;
+    margin-bottom: 90px;
+    font-size: large;
 }
 
 h2, h3 {
-    font-size: 1.8em;
-    text-shadow: 1px 1px 0.4px #fff;
+    font-size: 2.1em;
+    text-shadow: 1px 1px 0.4px black;
 }
 
 .events ul {
     list-style-type: none;
     padding-left: 0;
+    margin-left: 20px;
     
 }
 
 .events li {
     margin: 10px 0;
-    text-shadow: 1px 1px 0.4px #fff;
+    text-shadow: 1px 1px 0.4px grey;
 }
 
 .skater-stories a {
-    color: #ff6347;
+    color: red;
     text-decoration: none;
-    text-shadow: 1px 1px 0.4px #fff;
+    text-shadow: 1px 1px 0.4px grey;
 }
 
 .skater-stories{
-    text-shadow: 1px 1px 0.4px #fff;
+    text-shadow: 1px 1px 0.4px grey;
 }
 
 /* Products Page */
 #products {
-    background-color: #e9f3ff;
+    background-color: white;
     padding: 20px;
 }
 
@@ -237,7 +220,7 @@ h2, h3 {
     border-radius: 8px;
     padding: 15px;
     width: 250px;
-    box-shadow: 0 4px 6px rgba(3, 69, 250, 0.377);
+    box-shadow: 0 4px 6px black;
     text-align: center;
 }
 
@@ -255,23 +238,11 @@ h2, h3 {
     font-size: 1.2em;
 }
 
-/* How-To Tutorials Page */
-#tutorials {
-    padding: 20px;
-    background-color: #57575728;
-}
-
-.tutorial {
-    background-color: #edf5faf3;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
 
 /* Contact Section */
 #contact {
     padding: 20px;
-    background-color: #eaeaea;
+    background-color: black;
 }
 
 form {
@@ -302,28 +273,14 @@ form input[type="submit"]:hover {
 
 .contact-info {
     font-size: 1.1em;
+    margin: 29px;
 }
 
 /* Footer */
 footer {
-    background-color: #575757;
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 50px 0;
+    margin-top: 20px;
 }
-
-
-(Products Page.html Starts Here)
-
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Products Page</title>
-    </head>
-
-    <body>
-        <h1>Check out our epic skateboard collection</h1>
-    </body>
-</html>
