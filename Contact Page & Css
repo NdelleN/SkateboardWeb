@@ -1,0 +1,208 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: rgb(140, 168, 199);;
+}
+
+/* Header / Banner */
+header {
+    background-color: #5a5757; /* Bright color reflecting the energy of skateboarding */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #575757;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(140, 168, 199);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover:not(.active) {
+    background-color:rgb(140, 168, 199);
+    color: black;
+  }
+
+
+  .active:hover {
+    background-color: rgb(99, 109, 112);
+    
+  }
+  
+.banner h1 {
+    font-size: 2.5em;
+    font-family:  'Times New Roman';
+    text-shadow: 2px 2px 5px rgb(8, 71, 134);
+    color: #edf5faf3;
+}
+
+#tutorials {
+    padding: 20px;
+    background-color: #57575728;
+}
+
+.tutorial {
+    background-color: #edf5faf3;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+form input[type="submit"] {
+    background-color: #095cf8bd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e53d3d;
+}
+
+.contact-info {
+    font-size: 1.1em;
+}
+
+
+
+#HTML
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="description" content="Join Hot Beans Web developer. Learn about our company, meet our trainee developers, check job requirements, and apply online.">
+        <title>Join Hot Beans Web | Careers</title>
+        <link rel="stylesheet" href="6.2 Website Task.css">
+    </head>
+
+    <body>
+        <!--Header section-->
+        <Header>
+            <h1>Welcome to Hot Beans Web Careers</h1>
+            <p>We're looking for passionate web bdevelopeers to join our  growing team!</p>
+        </Header>
+
+        <!--Company Profile Section-->
+        <section id="company-profile">
+            <h2>About Hot Beans Web</h2>
+            <p>Hot Beans Web is a dynamic web development company known for creating innovative and user-friendly websites. We specialize in cutting edge technologies and are passionate about helping businesses build a strong digoital presence. As part of our expansion, we're in search for talented web developers to join our team.</p>
+        </section>
+
+        <!--Trainee Developer Profile Section-->
+        <section id="trainee-profiles">
+            <h2>Meet Our Trainee developers</h2>
+            <div class="profile">
+                <h3>Alice Smith</h3>
+                <p>Alice has recently completed her web dvelopment training and is excited to take on challenges in front-end development, focusing on HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="profile">
+                <h3>John Doe</h3>
+                <p>John specializes in back-end development with astrong grasp of Node.js and database management. He's currently working on optimizing server-side applications.</p>
+            </div>
+            <div class="profile">
+                <h3>Emma Johnson</h3>
+                <p>Emma is a full-stack developer with a passion for creating seamless web experiences using React and Python. She's particularly interested in UX/UI design.</p>
+            </div>
+        </section>
+
+        <!--Job Specifications Section-->
+        <section  id="job-specifications">
+            <h2>Job Specifications & Qualifications</h2>
+            <ul>
+                <li>Proficient in HTML, CSS, and JavaScript.</li>
+                <li>Experience with front-end framweorks (React, Vue.js, or Angular) is a plus.</li>
+                <li>Ability to work collaboratively in an agile environment.</li>
+                <li>Good problem-solving skills and attention to detail.</li>
+                <li>Familiarity with back-end technologies (Node.js, Express, Python, etc.)</li>
+                <li>Previous internship or project work related to detail.</li>
+                <li>Bachelor's degree in Computer Science or related field, or equivalent practical experience.</li>
+            </ul>
+        </section>
+
+        <!--Online Application Form Section-->
+        <section id="application-form">
+            <h2>Apply Now</h2>
+            <form action="/submit-application" method="post">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+                <br><br>
+
+                <label for="message">Why do you want to work at Hot Beans Web?</label><br>
+                <textarea id="message" name="message" rows="10" columns="20" required></textarea>
+                <br><br>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <!--Links to Web Development Courses Section-->
+        <section id="courses">
+            <h2>Enhance Your Skills with These Web Development Courses</h2>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+                <li><a href="https://www.codeacademy.com/" target="_blank">Codeacademy</a></li>
+                <li><a href="https://www.udemy.com/courses/search/?q=web%20development" target="_blank">Udemy Web Development Courses</a></li>
+            </ul>
+        </section>
+
+        <!--Footer Section-->
+        <footer>
+            <p>&copy; 2024 Hot beans Web. All Rights Reserved.</p>
+        </footer>
+
+    </body>
+</html>
