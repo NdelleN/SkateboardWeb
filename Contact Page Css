@@ -1,3 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simon's Skate Haven</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .carousel-inner img {
+        width: 100%; /* Make images responsive to container width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 300px; /* Set a maximum height for consistency */
+        object-fit: cover; /* Crop images to fill the container */
+    }
+    </style>
+
+  <link rel="stylesheet" href="Contact.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Header/Banner Section -->
+<header>
+    <div class="banner">
+        <h1>Simon's Skate Haven</h1>
+    </div>
+</header>
+
+<div class="topnav">
+    <a class="active" href="Index.html">Home</a>
+    <a href="ProductsPage.html">Products</a>
+    <a href="TutorialsPage.html">Tutorials</a>
+    <a href="ContactPage.html">Contact</a>
+  </div>
+
+<div class="container">
+  <h2>Carousel Example</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!--Container for the contact form-->
+<div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="post" class="contact-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- Textarea for user to input a message -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div class="form-buttons">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+</div>
+    </head>
+
+</html>
+
+#CSS
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -12,27 +130,28 @@ body {
 }
 
 h1, h2, h3 {
-    color: rgb(140, 168, 199);;
+    color: darkred;
 }
 
 /* Header / Banner */
 header {
-    background-color: #5a5757; /* Bright color reflecting the energy of skateboarding */
+    background-color:black; 
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     padding: 20px 0;
 }
 
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #575757;
+    background-color: black;
   }
   
   /* Style the topnav links */
   .topnav a {
     float: left;
     display: block;
-    color: rgb(140, 168, 199);
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,70 +159,115 @@ header {
   
   /* Change color on hover */
   .topnav a:hover:not(.active) {
-    background-color:rgb(140, 168, 199);
-    color: black;
+    background-color:rgb(203, 207, 211);
+    color: red;
   }
 
 
   .active:hover {
-    background-color: rgb(99, 109, 112);
+    background-color: white;
     
   }
   
 .banner h1 {
     font-size: 2.5em;
     font-family:  'Times New Roman';
-    text-shadow: 2px 2px 5px rgb(8, 71, 134);
-    color: #edf5faf3;
+    color: white;
 }
 
-#tutorials {
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif; /* Use the same font as the homepage */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Dark gray header background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Navigation styles */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Carousel styles */
+.carousel-inner img {
+    width: 100%; /* Make images responsive to container width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Set a maximum height for consistency */
+    object-fit: cover; /* Crop images to fill the container */
+}
+
+/* Contact form styles */
+.contact-form-container {
+    width: 500px; /* Adjust width as needed */
+    margin: 50px auto; /* Center the container */
     padding: 20px;
-    background-color: #57575728;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.tutorial {
-    background-color: #edf5faf3;
-    border-radius: 8px;
-    padding: 15px;
+.contact-form h2 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-/* Contact Section */
-#contact {
-    padding: 20px;
-    background-color: #eaeaea;
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-form input[type="text"], form input[type="email"] {
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-form input[type="submit"] {
-    background-color: #095cf8bd;
-    color: white;
-    border: none;
+.form-buttons {
+    text-align: center;
+}
+
+.submit-btn,
+.reset-btn {
+    background-color: #4CAF50;
+    color: #fff;
     padding: 10px 20px;
-    font-size: 1.1em;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-form input[type="submit"]:hover {
-    background-color: #e53d3d;
+.reset-btn {
+    background-color: #ccc;
 }
-
-.contact-info {
-    font-size: 1.1em;
-}
-
-
-
