@@ -33,7 +33,7 @@
 </header>
 
 <div class="topnav">
-    <a class="active" href="Index.html">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="ProductsPage.html">Products</a>
     <a href="TutorialsPage.html">Tutorials</a>
     <a href="ContactPage.html">Contact</a>
