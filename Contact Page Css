@@ -231,47 +231,6 @@ body {
     background-color: #f0f0f0; 
 }
 
-/* Header /Banner */
-header {
-    background-color:black;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 20px 0;
-}
-
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color:black;
-}
-
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover:not(.active) {
-    background-color: rgb(203, 207, 211);
-    color: red;
-}
-
-.active:hover {
-    background-color: white;
-    color: red;
-}
-
-.banner h1 {
-    font-size: 2.5em;
-    font-family:  'Times New Roman';
-    color: white;
-}
-
 /* Styling the carousel */
 .carousel-inner img {
     width: 100%; /* Make images responsive to container width */
