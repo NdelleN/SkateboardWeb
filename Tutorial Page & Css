@@ -12,12 +12,12 @@
    <!-- Header/Banner Section -->
 <header>
     <div class="banner">
-        <h1>𝕊𝕚𝕞𝕠𝕟'𝕤 𝕊𝕜𝕒𝕥𝕖 ℍ𝕒𝕧𝕖𝕟</h1>
+        <h1>Simon's Skate Haven</h1>
     </div>
 </header>
 
 <div class="topnav">
-    <a class="active" href="Index.html">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="ProductsPage.html">Products</a>
     <a href="TutorialsPage.html">Tutorials</a>
     <a href="ContactPage.html">Contact</a>
